@@ -1,0 +1,138 @@
+/* Reset dasar dan Font Global */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    background-image: linear-gradient(#005ea7, #000e4e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Variabel warna (disamakan dengan style utama agar konsisten) */
+:root {
+    --primary-blue: #005288;
+    --dark-blue: #003359;
+    --darker-blue: #001e35;
+    --highlight-orange: #ff9900;
+    --light-gray: #e0e6ed; /* Warna abu-abu muda untuk box login */
+    --input-bg: #cfd8dc;   /* Warna background input field */
+}
+
+/* Container utama untuk menengahkan box login */
+.login-container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box putih di tengah */
+.login-box {
+    background-color: var(--light-gray);
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
+    width: 100%;
+    /* text-align: left; */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.login-logo {
+    max-width: 18rem; /* Atur lebar maksimal logo agar tidak terlalu besar. 
+                         Anda bisa coba nilai lain seperti 12rem atau 18rem sesuai selera. */
+    height: auto;     /* Menjaga proporsi gambar agar tidak gepeng */
+    display: block;   /* Memastikan logo berperilaku sebagai blok */
+    margin: 0 auto 2rem; /* Menengahkan logo dan memberi jarak bawah 2rem */
+}
+
+/* Style untuk Form */
+.input-group {
+    margin-bottom: 2rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.input-group input {
+    width: 400px;
+    padding: 16px 12px;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--input-bg);
+    font-size: 1.2rem;
+    color: #555;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+    outline: none;
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+.input-group input:focus {
+    background-color: #fff; /* Efek saat input diklik */
+    box-shadow: 0 0 0 2px var(--primary-blue);
+}
+
+/* Container khusus password agar ikon mata bisa di dalam */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 4rem; /* Memberi ruang untuk ikon mata */
+    text-align: left;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    font-size: 1.6rem;
+}
+
+/* Tombol Login */
+.btn-login-submit {
+    width: 100%; /* Pastikan ini 100% */
+    padding: 1.2rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2rem;
+}
+
+.btn-login-submit:hover {
+    background-color: var(--dark-blue);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 3rem 2rem;
+    }
+}
