@@ -1,7 +1,5 @@
 # Applied Informatics Laboratory - Web Profile 
 
-- [Demo](https://themewagon.github.io/iStudio/)
-
 ## Getting Started
 
 Clone Repository
