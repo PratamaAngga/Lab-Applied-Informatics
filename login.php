@@ -18,16 +18,16 @@
                 <img src="img/logolabai.png" alt="Applied Informatics Logo" class="login-logo">
             </div>
 
-            <form action="#" method="POST" class="login-form">
+            <form action="proses-login.php" method="POST" class="login-form">
                 <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap anda" required>
                 </div>
 
                 <div class="input-group">
                     <label for="password">Password</label>
                     <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                        <input type="password" id="password" name="password" placeholder="Masukkan password anda" required>
                         <i class="fa-regular fa-eye-slash toggle-password" id="togglePassword"></i>
                     </div>
                 </div>
