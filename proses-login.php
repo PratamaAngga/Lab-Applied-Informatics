@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_name'] = $user['name'];
         $_SESSION['user_role'] = $user['role'];
 
-        header("Location: index.html");
+        header("Location: cms/index.php");
         exit;
     } else {
         $_SESSION['error_message'] = "Nama atau password salah.";
